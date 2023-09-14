@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+#n-america {
+    text-align: center;
+}
