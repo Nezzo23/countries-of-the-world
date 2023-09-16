@@ -79,6 +79,10 @@ button {
     font-size: 25px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 #europe {
     width: 200px;
     height: 200px;
@@ -162,11 +166,6 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-
-
-
-
 
 
 
@@ -273,13 +272,14 @@ button {
     padding: 5px;
     height: 40px;
     width: 150px;
-    border-radius: px;
+    border-radius: 4px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 .country .box {
     max-width: 200px;
-    height: 25px;
+    height: 30px;
     width: 100%;
     font-size: 20px;
     border-radius: 3px;
@@ -399,7 +399,7 @@ button {
         padding: 5px;
         height: 40px;
         width: 150px;
-        border-radius: px;
+        border-radius: 4px;
         font-size: 20px;
     }
     
