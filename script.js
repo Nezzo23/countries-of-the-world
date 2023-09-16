@@ -57,7 +57,7 @@ var countryToContinent = {
     "Congo/Republic of the Congo": "africa",
     "Democratic Republic of the Congo": "africa",
     "Djibouti": "africa",
-    "Egypt (transcontinental)": "africa",
+    "Egypt": "africa",
     "Equatorial Guinea": "africa",
     "Eritrea": "africa",
     "Eswatini (formerly Swaziland)": "africa",
@@ -109,8 +109,6 @@ var countryToContinent = {
     "Saint Helena, Ascension and Tristan da Cunha (UK)": "africa",
     "Socotra Archipelago (Yemen)": "africa",
     "Afghanistan": "asia",
-    "Armenia (transcontinental)": "asia",
-    "Azerbaijan (transcontinental)": "asia",
     "Bahrain": "asia",
     "Bangladesh": "asia",
     "Bhutan": "asia",
@@ -118,9 +116,6 @@ var countryToContinent = {
     "Brunei": "asia",
     "Cambodia": "asia",
     "China": "asia",
-    "Cyprus (transcontinental)": "asia",
-    "Egypt (transcontinental)": "asia",
-    "Georgia (transcontinental)": "asia",
     "Hong Kong (China - Special Administrative Region)": "asia",
     "India": "asia",
     "Indonesia": "asia",
@@ -129,7 +124,6 @@ var countryToContinent = {
     "Israel (U.N. member, though partially unrecognized)": "asia",
     "Japan": "asia",
     "Jordan": "asia",
-    "Kazakhstan (transcontinental)": "asia",
     "Kuwait": "asia",
     "Kyrgyzstan": "asia",
     "Laos": "asia",
@@ -146,7 +140,6 @@ var countryToContinent = {
     "Palestine (limited recognition)": "asia",
     "Philippines": "asia",
     "Qatar": "asia",
-    "Russia (transcontinental)": "asia",
     "Saudi Arabia": "asia",
     "Singapore": "asia",
     "South Korea (Republic of Korea)": "asia",
@@ -156,7 +149,6 @@ var countryToContinent = {
     "Tajikistan": "asia",
     "Thailand": "asia",
     "Timor-Leste/East Timor": "asia",
-    "Turkey (transcontinental)": "asia",
     "Turkmenistan": "asia",
     "United Arab Emirates": "asia",
     "Uzbekistan": "asia",
@@ -282,21 +274,15 @@ var countryToContinent = {
 };
 
 var countries = Object.keys(countryToContinent);
-
 function getRandomCountry() {
     const randomIndex = Math.floor(Math.random() * countries.length);
     const randomCountry = countries[randomIndex];
     return randomCountry;
 }
-
 document.getElementById('run').addEventListener('click', function () {
     const randomCountry = getRandomCountry();
     const correctContinent = countryToContinent[randomCountry];
-
-
     document.querySelector('.country input').value = randomCountry;
-
-
     var continents = document.querySelectorAll('.world-map div');
     continents.forEach(function (continentDiv) {
         continentDiv.addEventListener('click', function () {

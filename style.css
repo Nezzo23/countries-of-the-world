@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -43,17 +44,23 @@ header > h1 {
     margin-top: 10px;
 }
 
+
 .country {
     text-align: center;
     padding-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .country .box {
+    max-width: 350px;
     height: 40px;
-    width: 350px;
-    font-size: 30px;
+    width: 100%;
+    font-size: 25px;
     text-align: center;
     border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 footer {
@@ -61,13 +68,28 @@ footer {
     font-size: 30px;
 }
 
+#run {
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #0d1e34;
+    padding: 10px;
+    height: 60px;
+    width: 200px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 25px;
+}
 
 #europe {
     width: 200px;
     height: 200px;
     padding: 30px;
     border: 4px solid black;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 #n-america {
@@ -112,30 +134,46 @@ footer {
 #australia:hover {
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 
 }
 
 #europe:hover {
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #n-america:hover {
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #s-america:hover {
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #africa:hover {
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #asia:hover {
     background-color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width:1600px)
+
