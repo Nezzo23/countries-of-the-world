@@ -59,7 +59,7 @@ Here is a github repository [link](https://github.com/Nezzo23/countries-of-the-w
 - For the devices under 350px width it is recomended to use landscape mode.
 
 ### Outstanding Defects
-- When starting a quiz everything functiones how it is suppost to. Later in the game, validation of answers is not accurate. it is possible that the problem lays in nested eventListener, but I couldn't ersolve it.
+- When starting a quiz everything functiones how it is suppost to. Later in the game, validation of answers is not accurate. It is possible that the problem lays in nested eventListener, but I couldn't resolveit.
 
 ### Defects of Note
 1. The website was designed mostly for desktop users, so optimisation for mobile devices needed to be made. They occure on the breaking points characteristic for this page.
